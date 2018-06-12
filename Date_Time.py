@@ -1,5 +1,12 @@
 # Working with Date And Time.
+
 import datetime
+from datetime import date
+
+
+  # Get today's date from the date class.
+today = date.today()
+print ("Today's date is ", today)
 
 myDate = datetime.date(2018,6,9)
 

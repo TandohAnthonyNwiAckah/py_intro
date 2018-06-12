@@ -1,8 +1,23 @@
+# Indentation matters in python when using if statement.
 
-myInput = input("Please enter your password :")
+# Python does not have support for higher-order conditionals like "switch-case" in other languages
 
 
-#indentation matters in python when using if statement.
-if len(myInput)<6:
-    print("Password is too short.")
+def main():
+  a, b = 20, 20
   
+  # conditional flow uses if, elif, else  
+  if(a < b):
+    out = "a is less than b"
+  elif (a == b):
+    out = "a is equal to b"
+  else:
+    out = "a is greater than b"
+  print (out)
+
+  out = "a is less than b" if (a < b) else "a is greater than or equal to b"
+  print (out)
+  
+
+if __name__ == "__main__":
+  main()
