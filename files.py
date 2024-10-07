@@ -1,6 +1,6 @@
 def main():  
   # Open a file for writing and create it if it doesn't exist
-    fil = open("myFile.txt","w+")
+    fil = open("my_file.txt", "w+")
     
 
   # write some lines of data to the file
