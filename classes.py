@@ -2,28 +2,29 @@
 # Objects have member variables and have behaviour associated with them. I
 
 
-class myClass():
-  def method1(obj):
-    print ("myClass method1")
-    
-  def method2(obj, sth):
-    print ("myClass method2: " + sth)
-    
-class anotherClass(myClass):
-  def method2(obj):
-    print ("anotherClass method2")
-    
-  def method1(obj):
-    myClass.method1(obj);
-    print ("anotherClass method1")
-      
-        
+class MyClass:
+    def method1(self):
+        print("My Class method1")
+
+    def method2(self, sth):
+        print("My Class method2: " + sth)
+
+class AnotherClass(MyClass):
+    def method2(self,sth):
+        print("Another Class method2")
+
+    def method1(self):
+        MyClass.method1(self)
+        print("Another Class method1")
+
+
 def main():
-  c = myClass()
-  c.method1()
-  c.method2("This is a string")
-  c2 = anotherClass()
-  c2.method1()
-  
+    c = MyClass()
+    c.method1()
+    c.method2("This is a string")
+    c2 = AnotherClass()
+    c2.method1()
+
+
 if __name__ == "__main__":
-  main()
+    main()
