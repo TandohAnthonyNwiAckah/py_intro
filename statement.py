@@ -7,9 +7,9 @@ def main():
   a, b = 20, 20
   
   # conditional flow uses if, elif, else  
-  if(a < b):
+  if a < b:
     out = "a is less than b"
-  elif (a == b):
+  elif a == b:
     out = "a is equal to b"
   else:
     out = "a is greater than b"
