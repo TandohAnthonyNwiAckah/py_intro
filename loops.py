@@ -5,7 +5,7 @@ def main():
   var = 0
   
   # define a while loop
-  while (var < 5):
+  while var < 5:
      print (var)
      var = var + 1
   
